@@ -8,7 +8,7 @@ Features
 - Clean and responsive UI
 - API-based movie data integration
 
-🛠️ Tech Stack
+Tech Stack
 - Language: Kotlin
 - IDE: Android Studio
 - Architecture: MVVM (ViewModel & LiveData)
