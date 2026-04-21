@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark">
+
+    <!-- Header sa gradientom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Glavni header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:background="@color/primary_dark_green"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="24dp"
+            android:gravity="center_vertical">
+
+            <!-- Nazad dugme -->
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:minWidth="70dp"
+                android:background="@drawable/button_background"
+                android:text="← Nazad"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:paddingHorizontal="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:text="Sačuvane igre"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:letterSpacing="0.05"
+                android:gravity="center"
+                android:singleLine="true"
+                android:ellipsize="end" />
+
+            <!-- Prazan prostor -->
+            <View
+                android:layout_width="80dp"
+                android:layout_height="34dp" />
+
+        </LinearLayout>
+
+        <!-- Gradient prelaz -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/header_gradient" />
+
+    </LinearLayout>
+
+    <!-- Empty State -->
+    <TextView
+        android:id="@+id/textViewEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="⭐ Nemate omiljenih igara\n\nDodajte igre u favorite klikom na zvezdu!"
+        android:textColor="@color/text_secondary"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <!-- Favorites List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFavorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+</LinearLayout>

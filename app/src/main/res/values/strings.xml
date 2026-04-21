@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Game Explorer</string>
+    <string name="search_hint">Pretraži igru...</string>
+    <string name="search_button">Pretraži</string>
+</resources>
